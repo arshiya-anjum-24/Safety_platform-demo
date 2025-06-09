@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/arshiya_anjum/Desktop/Amazon/Safety_System-demo",
+      "program": "/Users/arshiya_anjum/Desktop/Amazon/Safety_System-demo/build/Debug/outDebug"
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height:50px;
+    width: 114px;
+    
+    padding: 1px 8px 0 6px; 
+}
+.logo {
+    height: 50px;
+    width: 100%;
+    background-image: url("Amazon-Logo-36.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 1.3px solid white;
+}
+
+/** box2 **/
+.add-first {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-second {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+/** box3 **/
+.nav-search {
+    display:flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius:4px;
+
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width:50px;
+    text-align: center;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    border: none;
+    
+}
+
+.search-input {
+    width:100%;
+    font-size:1rim;
+    border:none;
+
+}
+
+.search-icon {
+    color:black;
+    width:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #e09e46;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+}
+
+.nav-search:hover {
+    border: solid orange;
+}
+
+/** box4 **/
+span {
+    font-size:0.7rem;
+}
+.nav-second {
+    font-size: 0.85rem;
+    font-weight:700;
+}
+
+/** box5 **/
+
+.nav-cart i{
+    position:relative;
+    font-size:28px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+    
+}
+
+/** Header part2 **/
+
+.panel {
+    background-color: #222f3d;
+    color:white;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.borderx {
+    border: 2px solid transparent;
+}
+
+.borderx:hover {
+    border: 1.3px solid white;
+}
+
+/*option */
+.panel-options p{
+    width:100%;
+    color:white;
+    margin:5px;
+    padding:8px 3px;
+    font-size:14px;
+    display: inline;
+    align-items:center;
+    border:border-box;
+    justify-content: space-evenly;
+}
+
+.select-item {
+    background-color: #222f3d;
+    color:white;
+    text-align: center;
+    border: none;
+    
+}
+
+
+/** hero section **/
+.hero-section {
+    background-image: url(background.png);
+    height:280px;
+    background-size:cover;
+}
+
+
+/** shop-section **/
+
+.shop-section {
+    
+    display:flex;
+    background-color: #e2e7e6;
+    height:430px;
+    justify-content: space-evenly;
+}
+
+.shop-section h1{
+    font-size:20px;
+    margin:13px 4px 5px 13px;
+    align-items: center;
+}
+.box {
+    height:400px;
+    width:23%;
+    background-color: white;
+    border:none;
+
+}
+
+.box-content {
+    margin-left:1rem;
+    margin-right:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-content p a{
+    font-size: 13px;
+    margin-left: 10px;;
+    color: #007185;
+    text-decoration: none;
+}
+
+.box-content p a:hover{
+    text-decoration: underline;
+}
+
+.box31, .box32, .box33, .box34 {
+    display:flex;
+    width: 44%;        /* Allows two boxes in one row with small gap */
+    height: 170px;     /* Adjust as needed */
+    margin-top: 10px;
+}
+.box-content3 img {
+    display:flex;
+    width: 100%;
+    height: auto;
+}
+.grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box33 img {
+  width: 80%;   /* Adjust as needed */
+  height: 70%;
+}
+
+.sbox {
+    width: 23%;
+    height: 160px;
+    background-color: white;
+    border: none;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.offer-text {
+    flex: 1;
+}
+
+.offer-text h1 {
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 6px;
+    color: #0f1111;
+    line-height: 1.3;
+}
+
+.offer-text p a {
+    font-size: 13px;
+    margin-left: 10px;;
+    color: #007185;
+    text-decoration: none;
+}
+
+.offer-text p a:hover {
+    text-decoration: underline;
+}
+
+.offer-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+/** order section **/

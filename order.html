@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Product Carousel</title>
+  <link rel="stylesheet" href="orderstyle.css" />
+</head>
+<body>
+  <h2 class="heading">Inspired by your browsing history</h2>
+  <div class="carousel-container">
+    <button class="arrow left" onclick="scrollLeft()">&#10094;</button>
+    <div class="carousel-viewport">
+      <div class="carousel-track" id="carousel">
+        <!-- Product Card (repeat 10 or more times) -->
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150x150" alt="Product">
+          <p class="title">Titan Neo Splash Brown Dial...</p>
+          <div class="rating">★★★★☆ 30</div>
+          <p class="price">₹4,795 <span class="mrp">₹5,995</span></p>
+          <p class="delivery">Free Delivery by Amazon</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150x150" alt="Product">
+          <p class="title">Titan Raga Showstopper Rose Gold...</p>
+          <div class="rating">★★★★☆ 20</div>
+          <p class="price">₹5,695 <span class="mrp">₹5,995</span></p>
+          <p class="delivery">Free Delivery by Amazon</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150x150" alt="Product">
+          <p class="title">Titan Purple Acetate...</p>
+          <div class="rating">★★★★☆ 65</div>
+          <p class="price">₹7,132 <span class="mrp">₹7,925</span></p>
+          <p class="delivery">Free Delivery by Amazon</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150x150" alt="Product">
+          <p class="title">Titan Multifunction Black Dial...</p>
+          <div class="rating">★★★★☆ 162</div>
+          <p class="price">₹8,856 <span class="mrp">₹7,795</span></p>
+          <p class="delivery">Free Delivery by Amazon</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150x150" alt="Product">
+          <p class="title">Pistaa's Women's Loose Fit Suit</p>
+          <div class="rating">★★★★☆ 840</div>
+          <p class="price">₹949 <span class="mrp">₹2,999</span></p>
+          <p class="delivery">Free Delivery by Amazon</p>
+        </div>
+        <!-- Slide 2 -->
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150x150" alt="Product">
+          <p class="title">Titan Raga Viva Rose Gold Watch</p>
+          <div class="rating">★★★★★ 2147</div>
+          <p class="price">₹4,947 <span class="mrp">₹5,820</span></p>
+          <p class="delivery">Free Delivery by Amazon</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150x150" alt="Product">
+          <p class="title">Skinn by Titan Perfume 50ml</p>
+          <div class="rating">★★★★☆ 376</div>
+          <p class="price">₹1,695 <span class="mrp">₹1,995</span></p>
+          <p class="delivery">Free Delivery by Amazon</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150x150" alt="Product">
+          <p class="title">Stylish Men's Watch Black</p>
+          <div class="rating">★★★★☆ 99</div>
+          <p class="price">₹2,199 <span class="mrp">₹3,199</span></p>
+          <p class="delivery">Free Delivery by Amazon</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150x150" alt="Product">
+          <p class="title">Rose Gold Bracelet Watch</p>
+          <div class="rating">★★★★☆ 56</div>
+          <p class="price">₹3,999 <span class="mrp">₹5,500</span></p>
+          <p class="delivery">Free Delivery by Amazon</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150x150" alt="Product">
+          <p class="title">Elegant Designer Dress</p>
+          <div class="rating">★★★★☆ 132</div>
+          <p class="price">₹1,299 <span class="mrp">₹2,099</span></p>
+          <p class="delivery">Free Delivery by Amazon</p>
+        </div>
+      </div>
+    </div>
+    <button class="arrow right" onclick="scrollRight()">&#10095;</button>
+  </div>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const productWidth = 200; // width including margin
+    const visibleProducts = 5;
+
+    function scrollLeft() {
+      carousel.scrollBy({ left: -productWidth * visibleProducts, behavior: 'smooth' });
+    }
+
+    function scrollRight() {
+      carousel.scrollBy({ left: productWidth * visibleProducts, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

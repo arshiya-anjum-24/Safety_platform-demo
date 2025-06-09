@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amazon-Style Product Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .main-container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .left-section {
+      width: 25%;
+      padding-right: 20px;
+      border-right: 1px solid #ccc;
+    }
+
+    .thumbnails {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .thumbnails img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .main-image {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .main-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .middle-section {
+      width: 50%;
+      padding: 0 20px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .rating {
+      color: #ffa41c;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #B12704;
+      margin-bottom: 8px;
+    }
+
+    .offer {
+      color: green;
+      margin-bottom: 12px;
+    }
+
+    .highlight {
+      background-color: #fff0c1;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .view-history-btn {
+      margin-top: 15px;
+      background: #004B91;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    .view-history-btn:hover {
+      background: #0060c2;
+    }
+
+    .trust-score-box {
+      margin-top: 15px;
+      padding: 10px;
+      background: #e8f5e9;
+      border: 1px solid #c8e6c9;
+      border-radius: 6px;
+      color: #2e7d32;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .right-section {
+      width: 25%;
+      padding-left: 20px;
+      border-left: 1px solid #ccc;
+    }
+
+    .card-box {
+      background: #f7f7f7;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .card-box .stock {
+      color: green;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card-box .seller {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .card-box select,
+    .card-box button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .add-btn {
+      background: #FFD814;
+      font-weight: bold;
+    }
+
+    .buy-btn {
+      background: #FFA41C;
+      font-weight: bold;
+    }
+
+    .protection {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    /* Suspicious warning */
+    .warning {
+      background-color: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeeba;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+    <!-- Left Section -->
+    <div class="left-section">
+      
+      <div class="main-image">
+        <img src="titan.jpg" alt="Main Product">
+      </div>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="middle-section">
+      <div class="title">Titan Raga Women's Allure: Brown Dial with Designer Metal Strap Analog Watch</div>
+      <div class="rating">4.3 ★★★★☆ (95)</div>
+      <div class="price">₹5,276</div>
+      <div class="offer">-20% off (M.R.P. ₹6,595)</div>
+      <div class="highlight">EMI starts at ₹256. No Cost EMI available</div>
+
+      <div class="trust-score-box">
+        🛡️ Product Trust Score: 87%
+      </div>
+
+      <button class="view-history-btn">📊 View Seller History</button>
+
+      
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <div class="card-box">
+        <div class="price" style="font-size: 22px;">₹5,276</div>
+        <div class="stock">In stock</div>
+        <div class="seller">Sold by: Titan Company LTD</div>
+        <div class="seller">Delivered by: Amazon</div>
+        <div class="seller"><a href="#">Secure transaction</a></div>
+
+        <div class="protection">
+          <input type="checkbox"> 1 Year Warranty Plan for ₹415
+        </div>
+
+        <select>
+          <option>Quantity: 1</option>
+        </select>
+
+        <button class="add-btn">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

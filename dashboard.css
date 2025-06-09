@@ -1,0 +1,43 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f6f6;
+  margin: 20px;
+}
+
+.dashboard-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(9, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.chart-box {
+  flex: 1 1 300px;
+}
+
+.badges {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.badge-count {
+  font-size: 48px;
+  color: #ff9900;
+  font-weight: bold;
+}

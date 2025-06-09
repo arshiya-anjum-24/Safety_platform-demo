@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #fff;
+}
+
+.heading {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-viewport {
+  width: 1000px; /* 200px * 5 products */
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 10px;
+}
+
+.product-card {
+  min-width: 190px;
+  max-width: 190px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 14px;
+  color: #007185;
+  margin: 8px 0;
+}
+
+.rating {
+  font-size: 14px;
+  color: #ffa41c;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #b12704;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: #555;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.delivery {
+  font-size: 13px;
+  color: #333;
+}
+
+.arrow {
+  background: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+  height: 100%;
+}
+
+.arrow.left {
+  position: absolute;
+  left: 0;
+}
+
+.arrow.right {
+  position: absolute;
+  right: 0;
+}
